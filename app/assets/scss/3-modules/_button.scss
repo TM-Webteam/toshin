@@ -3,61 +3,32 @@
   ボタン
   ----------------
 */
-.more,button[type="submit"] {
-	
-}
-
-// 電話番号
-.tel {
-  display: inline-block;
-  font-size: 36px;
-  font-weight: 700;
-  color: #000;
-  padding-left: 35px;
-  position: relative;
-  @media #{$sp} {
-    font-size: 20px;
-    padding-left: 30px;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 22px;
-    height: 33px;
-    background: url('../img/common/tel.svg') 50% / contain no-repeat;
-    @media #{$sp} {
-      width: 15px;
-      height: 25px;
-    }
-  } 
-}
-
-// ボタン
-.btn01 {
-	display: block;
-  max-width: 560px;
+.more {
+  display: block;
+  width: 400px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
 	padding: 17px;
-	background: #0D5BAB;
-  box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+	background: linear-gradient(100deg, #98CC70, #2DB198, #2DB198, #98CC70);
+  background-position: 1% 50%;
+  background-size: 200% auto;
+  // border: 1px solid #13987F;
+  // border-image: linear-gradient(135deg, #13987F, #F9B005);
+  // border-image-slice: 1;
 	position: relative;
   border-radius: 50px;
   margin: 0 auto;
-  border: 3px solid #0D5BAB;
 	@media #{$sp} {
 		font-size: 14px;
     padding: 13px;
-    max-width: 85%;
-    border: 2px solid #0D5BAB;
+    width: 85%;
 	}
-  &:before {
+  &.core {
+    display: flex;
+  }
+	&:before {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -74,67 +45,125 @@
       right: 20px;
     }
 	}
-  &:hover {
-    opacity: 1;
+  &.bgW {
     background: #fff;
-    color: #0D5BAB;
-    &::before {
-      border-top: solid 3px #0D5BAB;
-      border-right: solid 3px #0D5BAB;
-    }
-  }
-  // サムネ付きボタン
-  &.thumb {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -50px;
-      margin: auto;
-      width: 126px;
-      height: 88px;
-      background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
-      transition: all .3s;
-      @media #{$sp} {
-        left: -30px;
-        width: 90px;
-        height: 55px;
-      }
+    border: 1px solid #13987F;
+    color: #13987F;
+    &:before {
+      border-top: solid 3px #13987F;
+      border-right: solid 3px #13987F;
     }
     &:hover {
-      &::after {
-        width: 136px;
-        height: 98px;
+      background: #13987F;
+      color: #fff;
+      &:before {
+        border-top: solid 3px #fff;
+        border-right: solid 3px #fff;
       }
     }
   }
-  // 小さいボタン
+  &.bgG {
+    background: #2DB198;
+    border: 1px solid #2DB198;
+    color: #fff;
+    &:before {
+      border-top: solid 3px #fff;
+      border-right: solid 3px #fff;
+    }
+    &:hover {
+      background: #fff;
+      color: #2DB198;
+      &:before {
+        border-top: solid 3px #2DB198;
+        border-right: solid 3px #2DB198;
+      }
+    }
+  }
+  
+  
   &.small {
-    max-width: 330px;
+    width: 330px;
     padding: 10px;
+    @media #{$sp} {
+      width: 85%;
+    }
     &:before {
       width: 6px;
       height: 6px;
       border-top: solid 2px #fff;
       border-right: solid 2px #fff;
     }
-    &:hover {
-      &::before {
-        border-top: solid 2px #F7A307;
-        border-right: solid 2px #F7A307;
-      }
-    }
   }
-  // 最小ボタン
   &.tiny {
-    font-size: 13px;
-    width: 140px;
-    padding: 10px;
+    font-size: 14px;
+    width: 160px;
+    padding: 20px 10px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.16);
     &:before {
       content: none;
+    }
+  }
+  &.wp-thumb {
+    width: 450px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -30px;
+      margin: auto;
+      width: 84px;
+      height: 59px;
+      background: url("../img/common/img-wp-thumb01.png") 50% / contain no-repeat;
+      transition: all .3s;
+      @media #{$sp} {
+        left: -30px;
+        width: 70px;
+        height: 48px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 95px;
+        height: 70px;
+        @media #{$sp} {
+          width: 80px;
+          height: 58px;
+        }
+      }
+    }
+  }
+  &:hover {
+    opacity: 1;
+    background-position: 99% 50%;
+  }
+}
+
+// 電話番号
+.tel {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  padding-left: 30px;
+  position: relative;
+  @media #{$sp} {
+    font-size: 24px;
+    padding-left: 25px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 20px;
+    height: 25px;
+    background: url('../img/common/tel.svg') 50% / contain no-repeat;
+    @media #{$sp} {
+      width: 15px;
+      height: 20px;
+      top: 12px;
     }
   }
 }
@@ -142,11 +171,12 @@
 // 吹き出し付きボタン
 .ctabtn {
   position: relative;
-  max-width: 560px;
+  width: 450px;
   margin: 0 auto;
   text-align: center;
   @media #{$sp} {
-    max-width: 100%;
+    width: 100%;
+    margin: 40px auto 0;
   }
   .balloon {
     display: inline-block;
@@ -156,15 +186,21 @@
     right: 0;
     margin: auto;
     z-index: 2;
+    @media #{$sp} {
+      top: -20px;
+    }
     &__txt {
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
       display: inline-block;
       font-size: 14px;
       font-weight: 700;
       padding: 5px 15px;
+      line-height: 1;
       border-radius: 20px;
       background: #fff;
-      color: #000;
-      border: 1px solid #f29600;
+      color: #212529;
+      border: 1px solid #2DB198;
+      transition: all .3s;
       position: relative;
       @media #{$sp} {
         font-size: 11px;
@@ -182,20 +218,43 @@
         border-style: solid;
         border-width: 6px 6px 0;
         z-index: 2;
+        transition: all .3s;
       }
       &::after {
         content: "";
         position: absolute;
-        top: 103%;
+        top: 105%;
         left: 0;
         right: 0;
         margin: auto;
         width: 0;
         height: 0;
-        border-color: #f29600 rgba(0,0,0,0) rgba(0,0,0,0);
+        border-color: #2DB198 rgba(0,0,0,0) rgba(0,0,0,0);
         border-style: solid;
         border-width: 6px 6px 0;
         z-index: 1;
+        transition: all .3s;
+      }
+
+      &--cLBeige {
+        border: 1px solid #F77F15;
+        border-radius: 20px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 105%;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0;
+          height: 0;
+          border-color: #F77F15 rgba(0,0,0,0) rgba(0,0,0,0);
+          border-style: solid;
+          border-width: 6px 6px 0;
+          z-index: 1;
+          transition: all .3s;
+        }
       }
     }
   }
@@ -203,7 +262,6 @@
     margin-top: 5px;
     font-size: 13px;
     font-weight: bold;
-    color: #0D5BAB;
     @media #{$sp} {
       font-size: 12px;
     }

@@ -3,3 +3,254 @@
   TOP
   ----------------
 */
+
+.top {
+
+  .hero04 {
+    height: 630px;
+    @media #{$sp} {
+      height: auto;
+    }
+    .containers-full {
+      padding: 0;
+    }
+    &__box {
+      width: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$sp} {
+        width: 100%;
+        padding: 40px 15px;
+        text-align: center;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 630px 70px 0 0;
+        border-color: #fff transparent transparent transparent;
+        z-index: 5;
+        @media #{$sp} {
+          content: none;
+        }
+      }
+      &--sub {
+        font-size: 22px;
+        font-weight: bold;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+      }
+      &--lead {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        @media #{$sp} {
+          font-size: 14px;
+          margin-bottom: 50px;
+        }
+      }
+      .ctabtn {
+        margin: 0;
+        .more {
+          font-size: 20px;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
+      }
+      .more {
+        margin: 0 0 15px;
+        width: 420px;
+        @media #{$sp} {
+          width: 100%;
+          margin: 0 auto 15px;
+        }
+      }
+    }
+    &__slider {
+      width: 50%;
+      max-width: 780px;
+      @media #{$sp} {
+        width: 100%;
+        overflow: hidden;
+      }
+      li {
+        height: 630px;
+        position: relative;
+        @media #{$sp} {
+          height: 210px;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 630px 70px;
+          border-color: transparent transparent #fff transparent;
+          z-index: 5;
+          @media #{$xl} {
+            content: none;
+          }
+        }
+        &.slider01 {
+          background: url("../img/top/slider01.webp") 50% / cover no-repeat;
+        }
+        &.slider02 {
+          background: url("../img/top/slider02.webp") 50% / cover no-repeat;
+        }
+        &.slider03 {
+          background: url("../img/top/slider03.webp") 50% / cover no-repeat;
+        }
+      }
+    }
+    &__wrap {
+      margin-left: auto;
+      @media #{$sp} {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .intro {
+    background: url("../img/common/bg-intro.webp") 50% / cover no-repeat;
+    background-attachment: fixed;
+    height: 345px;
+
+    @media #{$sp} {
+      height: 238px;
+      background-attachment: scroll;
+      .containers {
+        padding: 15px;
+      }
+    }
+    .card {
+      box-shadow: 0 0 20px rgba(0,0,0,0.11);
+      background: #fff;
+      width: 85%;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      background-color:rgba(255,255,255,0.9);
+      @media #{$sp} {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        text-align: left;
+      }
+      p {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+          @media #{$sp} {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    background: #F8F8F8;
+    .card {
+      &__box {
+        width: calc(100% / 3 - 20px);
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        position: relative;
+        text-align: center;
+        margin-bottom: 60px;
+        @media #{$sp} {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        &--had {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -15px;
+          margin: auto;
+          z-index: 4;
+          @media #{$sp} {
+            top: -12px;
+          }
+          span {
+            text-align: center;
+            color: #fff;
+            padding: 3px 15px;
+            display: inline-block;
+            background: #67A0EA;
+            font-weight: 500;
+            &.v2 {
+              background: #5FBECC;
+            }
+            &.v3 {
+              background: #8ECB60;
+            }
+          }
+        }
+        &--img {
+
+        }
+        &--txt {
+          padding: 30px;
+          @media #{$sp} {
+            padding: 15px;
+          }
+          dt {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            @media #{$sp} {
+              font-size: 16px;
+            }
+          }
+          dd {
+            text-align: left;
+          }
+        }
+      }
+    }
+    .more {
+      margin: 0;
+      @media #{$sp} {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .card-type5 {
+    background: #F2F4F4;
+    .card {
+      &__box {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        padding: 0;
+        &--ttl {
+          padding: 30px 10px;
+          @media #{$sp} {
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+    .more {
+      width: 440px;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+  } 
+
+}

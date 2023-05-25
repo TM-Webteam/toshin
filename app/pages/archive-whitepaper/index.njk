@@ -1,0 +1,50 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="arc-whitepaper">
+
+  <section class="hero03 core">
+    <div class="containers">
+      <div class="hero03__box">
+        <h1 class="ttl-primary-lower">お役立ち資料</h1>
+        <div class="lead">ソーラーカーポートに関する基礎知識から<br class="sp-only">実践に役立つノウハウ・事例資料まで<br>無料でダウンロードできますので<br class="sp-only">是非ご覧ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-menu bg-beige">
+    <div class="containers">
+
+      <a href="#" class="flex aiC card">
+        <figure class="card__img"><img src="/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

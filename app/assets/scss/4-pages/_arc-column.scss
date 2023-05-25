@@ -1,0 +1,32 @@
+/*
+  ----------------
+  arc-column
+  ----------------
+*/
+
+.arc-column {
+
+  .hero03 {
+    background: url("../img/column/bg-hero.webp") 50% / cover no-repeat;
+    height: 320px;
+    color: #fff;
+    @media #{$sp} {
+      height: auto;
+    }
+    .ttl-primary-lower {
+      margin-bottom: 20px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    .lead {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 0;
+      @media #{$sp} {
+        font-size: 16px;
+      }
+    }
+  }
+
+}

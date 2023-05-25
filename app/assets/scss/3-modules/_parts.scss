@@ -30,6 +30,8 @@
 .time {
   display: inline-block;
   font-size: 14px;
+  font-weight: bold;
+  color: #13987F;
   @media #{$sp} {
     font-size: 12px;
   }
@@ -149,6 +151,9 @@
 // マーカーライン
 .marker {
   background-image: linear-gradient(top, transparent 60%, #FFF826 60%);
+  &.cG {
+    background-image: linear-gradient(top, transparent 60%, #E5F2DA 60%);
+  }
 }
 
 // 強調打点

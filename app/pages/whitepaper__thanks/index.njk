@@ -1,0 +1,38 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="thanks">
+
+  <section>
+    <div class="containers">
+
+      <h1 class="ttl-primary-lower">お役立ち資料をダウンロードいただき<br class="sp-only">ありがとうございました。</h1>
+
+      <div class="lead">ご入力いただきましたメールアドレス宛に<br>資料のダウンロード用URLを送信させていただきました。</div>
+
+      <a href="/" class="more bgW">トップページに戻る</a>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

@@ -351,41 +351,43 @@
 
 // 会社情報
 .info {
+  background: #F2F4F4;
   .card {
     &__box {
       width: calc(100% / 2 - 20px);
-      background: #fff;
-      padding: 30px;
+      padding: 30px 30px 30px 120px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.11);
       @media #{$sp} {
         width: 100%;
         padding: 15px;
       }
-      &--img {
-        width: 64px;
+      &:first-child {
+        background: url("../img/top/img-info01.svg") 30px 50% / 64px auto no-repeat #fff;
         @media #{$sp} {
-          text-align: center;
+          background: url("../img/top/img-info01.svg") 15px 50% / 32px auto no-repeat #fff;
         }
       }
+
+      &:last-child {
+        background: url("../img/top/img-info02.svg") 30px 50% / 64px auto no-repeat #fff;
+        @media #{$sp} {
+          background: url("../img/top/img-info02.svg") 15px 50% / 32px auto no-repeat #fff;
+        }
+      }
+      
       &--txt {
-        width: calc(100% - 64px - 20px);
+        font-size: 20px;
+        font-weight: bold;
         transition: all .3s;
         @media #{$sp} {
           width: 100%;
-        }
-        dt {
-          font-size: 20px;
-          font-weight: bold;
-          @media #{$sp} {
-            font-size: 16px;
-            text-align: center;
-          }
+          font-size: 16px;
+          text-align: center;
         }
       }
       &:hover {
         opacity: 1;
-        .card__box--txt {
-          color: #0D5BAB;
-        }
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
       }
     }
   }
@@ -395,9 +397,47 @@
 .inquiry {
   background: url("../img/common/bg-inquiry.webp") 50% / cover no-repeat;
   color: #fff;
+  @media #{$sp} {
+    background: url("../img/common/bg-inquiry.webp") 30% 50% / cover no-repeat;
+  }
+  .more {
+    width: 560px;
+    @media #{$sp} {
+      width: 85%;
+    }
+  }
+  &__tel {
+    margin-top: 30px;
+    @media #{$sp} {
+      margin-top: 15px;
+    }
+    .tel {
+      color: #fff;
+      font-size: 30px;
+      @media #{$sp} {
+        font-size: 24px;
+      }
+      &::before {
+        width: 23px;
+        height: 30px;
+        background: url('../img/common/tel-w.svg') 50% / contain no-repeat;
+        @media #{$sp} {
+          width: 20px;
+          height: 25px;
+          top: 10px;
+        }
+      }
+    }
+    span {
+      @media #{$sp} {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
   &__box {
     margin: 30px auto 0;
-    background-color:rgba(255,255,255,0.37);
+    background-color:rgba(255,255,255,0.18);
     padding: 30px 45px;
     width: 80%;
     @media #{$sp} {
@@ -420,6 +460,12 @@
       width: 300px;
       @media #{$sp} {
         width: 100%;
+      }
+      .more.tiny {
+        width: 140px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 13px;
       }
     }
   }
@@ -611,10 +657,24 @@
   }
 }
 
+
+
 // ホワイトペーパー　※CMS対応
 .material {
-  background: #0D5BAB;
+  background: url("../img/common/bg-material.webp") 50% / cover no-repeat;
+  background-attachment: fixed;
   color: #fff;
+  height: 310px;
+  @media #{$sp} {
+    height: 345px;
+    background-attachment: scroll;
+  }
+  .containers {
+    padding: 40px 30px;
+    @media #{$sp} {
+      padding: 20px 15px;
+    }
+  }
   .desc {
     &__img {
       text-align: center;
@@ -636,36 +696,39 @@
       width: 40%;
       @media #{$sp} {
         width: 100%;
+        text-align: center;
       }
       &--sub {
         font-size: 22px;
-        margin-bottom: 20px;
         @media #{$sp} {
           font-size: 16px;
-          margin-bottom: 10px;
         }
       }
       &--ttl {
         font-size: 32px;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         @media #{$sp} {
           font-size: 18px;
           margin-bottom: 15px;
         }
       }
-      .btn01 {
+      .more {
         margin: 0;
         max-width: 400px;
         font-size: 16px;
         @media #{$sp} {
           margin: 0 auto;
           font-size: 14px;
+          width: 85%;
+          max-width: none;
         }
       }
     }
   }
 }
+
+
 
 // ニュース　※CMS対応
 .sec-news {
@@ -675,20 +738,20 @@
   &__box {
     display: block;
     padding: 20px 0;
-    border-bottom: 1px dashed #999;
+    border-bottom: 1px dashed #DDDDDD;
     @media #{$sp} {
       width: 100%;
       padding: 15px 0;
     }
     &--item {
       dt {
-        width: 200px;
+        width: 100px;
         @media #{$sp} {
           width: 100%;
         }
       }
       dd {
-        width: calc(100% - 200px - 50px);
+        width: calc(100% - 100px - 30px);
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -699,10 +762,10 @@
       }
     }
   }
-  .btn01 {
-    margin-top: 70px;
+  .more {
+    margin-top: 40px;
     @media #{$sp} {
-      margin-top: 30px;
+      margin-top: 20px;
     }
   }
 }
@@ -949,11 +1012,12 @@
 
 // お役立ち資料
 .useful-wp {
-  background: url("../img/top/bg-wp.webp") 50% / cover no-repeat;
+  background: #C3E3DF;
   .card {
     display: block;
     width: calc(100% / 2 - 20px);
     background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.11);
     @media #{$sp} {
       width: 100%;
     }
@@ -982,13 +1046,13 @@
         padding: 15px;
       }
       &--ttl {
-        font-size: 20px;
+        text-align: center;
         font-weight: bold;
         margin-bottom: 20px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 1;
         @media #{$sp} {
           font-size: 16px;
           margin-bottom: 15px;
@@ -1014,17 +1078,12 @@
     }
     &:hover {
       opacity: 1;
-      .more.bgY {
-        background: #fff;
-        color: #F7A307;
-        border: 3px solid #F7A307;
-        &::before {
-          border-top: solid 3px #F7A307;
-          border-right: solid 3px #F7A307;
-        }
-      }
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
       .card__img img {
         transform:scale(1.1,1.1);
+      }
+      .more {
+        background-position: 99% 50%;
       }
     }
   }

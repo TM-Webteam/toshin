@@ -9,11 +9,11 @@
     "last 50 version"
   ],
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/register": "^7.21.0",
     "autoprefixer": "^9.8.8",
-    "browser-sync": "^2.27.11",
+    "browser-sync": "^2.29.3",
     "cssnano": "^4.1.11",
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",

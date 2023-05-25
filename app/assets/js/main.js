@@ -142,6 +142,19 @@ $(document).ready(function() {
 });
 
 
+//--------------------------------------
+//　top-slick
+//--------------------------------------
+
+$(document).ready(function() {
+  $("#top-slide").slick({
+    autoplay: true,
+    fade: true,
+    cssEase: 'linear',
+    speed: 600,
+  });
+});
+
 
 //--------------------------------------
 //　faq　プルダウン

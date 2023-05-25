@@ -1,0 +1,116 @@
+/*
+  ----------------
+  question
+  ----------------
+*/
+
+.faq {
+  
+  .hero03 {
+    background: url("../img/question/bg-hero.webp") 50% / cover no-repeat;
+    height: 320px;
+    color: #fff;
+    @media #{$sp} {
+      height: auto;
+    }
+    .ttl-primary-lower {
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    .lead {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 0;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+      @media #{$sp} {
+        font-size: 16px;
+      }
+    }
+  }
+
+  dl {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    .question {
+      position: relative;
+      background: #fff;
+      padding: 15px 60px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.8;
+      border: 1px solid #CCC;
+      cursor: pointer;
+      transition: all .3s;
+      @media #{$sp} {
+        font-size: 14px;
+        padding: 10px 40px;
+      }
+      &::before {
+        content: 'Q';
+        position: absolute;
+        top: 8px;
+        left: 25px;
+        font-size: 34px;
+        font-weight: bold;
+        padding-right: 20px;
+        font-family: "DINOT";
+        line-height: 1.4;
+        @media #{$sp} {
+          font-size: 18px;
+          left: 15px;
+          padding-left: 0;
+        }
+      }
+      &__ttl {
+        font-weight: bold;
+        position: relative;
+        &::before,&::after {
+          content: '';
+          width: 20px;
+          height: 3px;
+          background: #F7701B;
+          position: absolute;
+          top: 50%;
+          right: -20px;
+          transform: translateY(-50%);
+          @media #{$sp} {
+            width: 15px;
+            height: 2px;
+          }
+        }
+        &::after {
+          transform: translateY(-50%) rotate(90deg);
+          transition: .5s;
+        }
+      }
+      &.open {
+        background: #F3F3F3;
+        .question__ttl::after {
+          transform: translateY(-50%) rotate(0);
+        }
+      } 
+    }
+    .answer {
+      display: none;
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 15px 60px;
+      color: #F7701B;
+      @media #{$sp} {
+        font-size: 14px;
+        padding: 10px 40px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+}
+

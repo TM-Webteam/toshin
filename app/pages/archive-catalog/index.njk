@@ -1,0 +1,60 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="arc-catalog">
+
+  <section class="hero03 core">
+    <div class="containers">
+      <div class="hero03__box">
+        <h1 class="ttl-primary-lower">日東エルマテリアルの製品カタログ</h1>
+        <div class="lead">防災対策にかかわる各種製品カタログをご用意しております。<br>製品の特長を詳しく知りたい方はぜひご覧ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-menu">
+    <div class="containers">
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/others/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/others/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+      
+    </div>
+  </section>
+
+
+</main>
+
+{% endblock %}
