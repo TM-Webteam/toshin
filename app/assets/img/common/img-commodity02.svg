@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.928" height="45.928" viewBox="0 0 45.928 45.928">
+  <g id="グループ_11817" data-name="グループ 11817" transform="translate(-556.535 -2782.536)">
+    <g id="コンポーネント_125_5" data-name="コンポーネント 125 – 5" transform="translate(556.535 2782.536)">
+      <g id="グループ_11815" data-name="グループ 11815" transform="translate(-9.535 -9.534)">
+        <path id="パス_6697" data-name="パス 6697" d="M22.964,0A22.964,22.964,0,1,1,0,22.964,22.964,22.964,0,0,1,22.964,0Z" transform="translate(9.535 9.534)" fill="#13987f"/>
+      </g>
+    </g>
+    <g id="手術台" transform="translate(566 2799)">
+      <rect id="長方形_23519" data-name="長方形 23519" width="26" height="5" rx="1" transform="translate(0 8)" fill="#fff"/>
+      <circle id="楕円形_528" data-name="楕円形 528" cx="2.5" cy="2.5" r="2.5" transform="translate(1 0)" fill="#fff"/>
+      <path id="パス_9700" data-name="パス 9700" d="M12,0H23.134A2.675,2.675,0,0,1,25.81,2.676v2.7H12V0Z" transform="translate(-3.931)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -6,9 +6,10 @@
 
 .article {
   &__ttl {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
+    line-height: 1.5;
     @media #{$sp} {
       font-size: 20px;
       margin-bottom: 15px;
@@ -16,7 +17,7 @@
   }
   &__lead {
     font-size: 22px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     color: #333333;
     @media #{$sp} {
       font-size: 18px;
@@ -68,19 +69,6 @@
           span {
             display: inline-block;
           }
-          .cat {
-            display: inline-block;
-            text-align: center;
-            line-height: 1.4;
-            font-size: 14px;
-            padding: 5px 15px;
-            color: #fff;
-            background: #0D5BAB;
-            @media #{$sp} {
-              font-size: 12px;
-              padding: 5px;
-            }
-          }
         }
         &--lead {
           display: -webkit-box;
@@ -92,24 +80,37 @@
     }
   }
   &__toc {
-    border: 3px solid #F2F6FB;
+    border: 3px solid rgba(70,150,128,0.17);
     padding: 30px;
     @media #{$sp} {
-      border: 2px solid #F2F6FB;
+      border: 2px solid rgba(70,150,128,0.17);
       padding: 15px;
     }
     &--ttl {
       font-size: 20px;
       font-weight: bold;
-      color: #0D5BAB;
+      color: #469680;
       margin-bottom: 20px;
+      padding-left: 35px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 24px;
+        height: 24px;
+        background: url("../img/common/toc.svg") 50% / contain no-repeat;
+      }
       @media #{$sp} {
         font-size: 16px;
         margin-bottom: 15px;
       }
     }
     &--list {
-      padding-left: 1.5em;
+      // padding-left: 1.5em;
       dl {
         &:not(:last-child) {
           margin-bottom: 30px;
@@ -120,21 +121,22 @@
         dt {
           font-weight: bold;
           margin-bottom: 10px;
-          position: relative;
-          &::before {
-            content: "●";
-            position: absolute;
-            top: 0;
-            left: -1.5em;
-            font-size: 16px;
-            @media #{$sp} {
-              font-size: 14px;
-            }
-          } 
+          // position: relative;
+          // &::before {
+          //   content: "●";
+          //   position: absolute;
+          //   top: 0;
+          //   left: -1.5em;
+          //   font-size: 16px;
+          //   @media #{$sp} {
+          //     font-size: 14px;
+          //   }
+          // } 
         }
         dd {
           margin-bottom: 5px;
           ul {
+            margin-left: 1em;
             padding-left: 1.5em;
             li {
               list-style: disc;

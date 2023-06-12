@@ -6,7 +6,7 @@
 
 // 最新の2件のみ表示
 .latest {
-  background: #0D5BAB;
+  background: linear-gradient(to right, rgba(82,188,204,0.2), rgba(152,204,112,0.2));
   // .containers {
   //   padding: 70px 30px 0;
   //   @media #{$sp} {
@@ -16,9 +16,9 @@
   
   .item {
     padding: 30px;
-    background: #F2F6FB;
+    background: #FFFFFF;
     width: calc(100% / 2 - 20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .11);
     position: relative;
     @media #{$sp} {
       width: 100%;
@@ -26,8 +26,10 @@
     }
     &:hover {
       opacity: 1;
-      box-shadow: 0 0 10px rgba(59,72,111,0.8);
-      background: #DFEDFF;
+      box-shadow: 0 5px 10px rgba(59,72,111, .3);
+      .item__ttl {
+        color: #13987F;
+      }
     }
     
     &:not(:last-child) {
@@ -44,6 +46,7 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden;
+      transition: all .3s;
       @media #{$sp} {
         font-size: 16px;
         margin-bottom: 10px;

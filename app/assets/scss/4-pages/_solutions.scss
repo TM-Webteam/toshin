@@ -1,0 +1,178 @@
+/*
+  ----------------
+  solutions
+  ----------------
+*/
+
+.solutions {
+
+  .hero03 {
+    background: url("../img/solutions/bg-hero.webp") 50% / cover no-repeat;
+    height: 430px;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__sub {
+      display: inline-block;
+      background: #fff;
+      padding: 5px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      @media #{$sp} {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding: 2px 15px;
+      }
+    }
+    .ttl-primary-lower {
+      margin-bottom: 70px;
+      color: #212529;
+      background: #fff;
+      display: inline-block;
+      padding: 0 30px 5px;
+      span {
+        color: #E67C5C;
+      }
+      @media #{$sp} {
+        margin-bottom: 0;
+        padding: 0 15px 2px;
+      }
+    }
+  }
+
+  .sec-anc {
+    .card {
+      margin-bottom: 30px;
+      &__box {
+        background: #fff;
+        text-align: center;
+        width: calc(100% / 3 - 20px);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        position: relative;
+        @media #{$sp} {
+          width: 100%;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -30px;
+          margin: auto;
+          width: 10px;
+          height: 10px;
+          border-top: solid 5px #13987F;
+          border-right: solid 5px #13987F;
+          transform: rotate(135deg);
+          transition: all .3s;
+        }
+        &--img {
+          overflow: hidden;
+          img {
+            transition: all .3s;
+          }
+        }
+        &--ttl {
+          padding: 30px 10px;
+          font-size: 20px;
+          font-weight: bold;
+          @media #{$sp} {
+            padding: 15px;
+            font-size: 16px;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          &::before {
+            bottom: -40px;
+          }
+          img {
+            transform: scale(1.1,1.1);
+          }
+        }
+        &:not(:last-child) {
+          @media #{$sp} {
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .region {
+    &__menu {
+      @media #{$sp} {
+        width: 900px;
+      }
+      col {
+        width: 9.28%;
+        &:last-child {
+          width: 35%;
+        }
+      }
+      tr {
+        border-bottom: 1px solid #333;
+        &:nth-child(even) {
+          background: #F6F6F6;
+        }
+        &:nth-child(2) td:first-child {
+          background: #67A0EA;
+        }
+        &:nth-child(3) td:first-child {
+          background: #3D7BCC;
+        }
+        &:nth-child(4) td:first-child {
+          background: #295FA6;
+        }
+        &:last-child td:first-child {
+          background: #254D85;
+        }
+        th,td {
+          text-align: center;
+          padding: 15px;
+          @media #{$sp} {
+            padding: 10px;
+          }
+        }
+        th {
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1.5;
+          @media #{$sp} {
+            font-size: 12px;
+          }
+          &:first-child {
+            color: #67A0EA;
+          }
+        }
+        td {
+          font-size: 20px;
+          @media #{$sp} {
+            font-size: 16px;
+          }
+          &:first-child {
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+            @media #{$sp} {
+              font-size: 12px;
+            }
+          }
+          ul {
+            text-align: left;
+            font-size: 14px;
+            padding-left: 1.5em;
+            @media #{$sp} {
+              font-size: 13px;
+            }
+            li {
+              list-style: disc;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

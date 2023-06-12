@@ -16,6 +16,64 @@
       width: 100%;
       .ttl-primary-lower {
         margin-bottom: 0;
+        text-shadow: 0 0 10px rgba(22,35,51,0.2);
+      }
+    }
+  }
+
+  .concept {
+    .containers {
+      padding: 70px 30px 0;
+      @media #{$sp} {
+        padding: 35px 15px 0;
+      }
+    }
+    &__box {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 50px;
+      text-align: center;
+      background-color:rgba(45,177,152,0.04);
+      @media #{$sp} {
+        padding: 15px;
+      }
+      dt {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2DB198;
+        line-height: 1;
+        margin-bottom: 10px;
+        @media #{$sp} {
+          font-size: 18px;
+        }
+        small {
+          font-size: 13px;
+          color: #B2B4B5;
+          @media #{$sp} {
+            font-size: 12px;
+          }
+        }
+      }
+      dd {
+        font-size: 22px;
+        @media #{$sp} {
+          font-size: 16px;
+        }
+        ul {
+          margin-top: 15px;
+          padding-left: 1.5em;
+          font-size: 20px;
+          text-align: left;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+          li {
+            list-style: disc;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        background-color: #fff;
       }
     }
   }
@@ -23,6 +81,7 @@
   .history {
     
     &__desc {
+      border: 1px solid #DDDDDD;
       dt,dd {
         padding: 10px 30px;
         border-bottom: 1px solid #DDDDDD;
@@ -31,25 +90,28 @@
         }
       }
       dt {
-        width: 21%;
-        font-weight: 500;
+        width: 23%;
+        font-size: 18px;
+        font-weight: 700;
+        border-right: 1px solid #ddd;
+        background: #F4F4F4;
+        text-align: center;
         @media #{$sp} {
           width: 100%;
+          font-size: 16px;
+          border-right: 0;
         }
-        &:first-child {
-          border-top: 1px solid #333333; 
+        &:last-of-type {
+          border-bottom: 0;
         }
       }
       dd {
-        width: calc(100% - 21%);
+        width: calc(100% - 23%);
         @media #{$sp} {
           width: 100%;
         }
-        &:first-of-type {
-          border-top: 1px solid #333333; 
-          @media #{$sp} {
-            border-top: 0;
-          }
+        &:last-of-type {
+          border-bottom: 0;
         }
       }
     }

@@ -1,0 +1,55 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <!-- ニュース詳細 -->
+  <section class="news-single">
+    <div class="containers">
+
+      <div class="flex gap20 fS aiC inherit news-single__date">
+        <time class="time">2021.3.8</time>
+        <span class="cat">カテゴリ名</span>
+      </div>
+
+      <h1 class="news-single__h1">お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。〈h1〉</h1>
+
+      <ul class="flex gap20 fS aiC sns">
+        <li><a href="#"><img src="/assets/img/common/in.svg" alt="LinkedIn"></a></li>
+        <li><a href="#"><img src="/assets/img/common/fb.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="/assets/img/common/tw.svg" alt="Twitter"></a></li>
+      </ul>
+
+      <div class=" news-single__lead">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</div>
+
+      <div class=" news-single__conts">
+        <p>お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。</p>
+        <p>お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。お知らせ本文が入ります。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
+
+</main>
+
+{% endblock %}

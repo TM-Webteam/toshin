@@ -10,10 +10,11 @@
   text-align: center;
   line-height: 1.4;
   font-size: 14px;
+  font-weight: 500;
   padding: 5px 15px;
-  color: #fff;
-  border: 1px solid #0D5BAB;
-  background: #0D5BAB;
+  color: #13987F;
+  border: 1px solid #13987F;
+  background: #fff;
   @media #{$sp} {
     font-size: 12px;
     padding: 3px 10px;
@@ -30,8 +31,7 @@
 .time {
   display: inline-block;
   font-size: 14px;
-  font-weight: bold;
-  color: #13987F;
+  color: rgba(33,37,41,0.58);
   @media #{$sp} {
     font-size: 12px;
   }
@@ -54,8 +54,9 @@
     height: 55px;
     padding: 5px 10px;
     font-size: 16px;
-    background: #ccc;
+    background: #F3F3F3;
     border-radius: 27px;
+    border: 1px solid #D4D4D5;
     &::placeholder {
       color: #777777;
       text-align: center;
@@ -67,13 +68,16 @@
   }
   &__btn {
     display: block;
-    width: 55px;
-    height: 55px;
-    padding: 15px;
+    width: 45px;
+    height: 45px;
+    padding: 0 12px;
+    background: #212529;
     position: absolute;
     top: 0;
+    bottom: 0;
     right: 5px;
     z-index: 3;
+    margin: auto;
     border-radius: 50%;
     @media #{$sp} {
       width: 35px;
@@ -84,6 +88,7 @@
       transition: all .3s;
     }
     &:hover {
+      opacity: 1;
       img {
         transform: scale(1.2);
       }
@@ -154,6 +159,9 @@
   &.cG {
     background-image: linear-gradient(top, transparent 60%, #E5F2DA 60%);
   }
+  &.cB {
+    background-image: linear-gradient(top, transparent 60%, #D1E3F9 60%);
+  }
 }
 
 // 強調打点
@@ -169,8 +177,8 @@ ruby {
 // 記事詳細カードリンク
 .cardLink {
   padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 3px 6px rgba(0,30,78,0.16);
+  margin-bottom: 40px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.16);
   @media #{$sp} {
     padding: 15px;
     margin-bottom: 15px;
@@ -204,8 +212,8 @@ ruby {
   }
   &:hover {
     opacity: 1;
-    background: #0D5BAB;
-    color: #fff;
+    background: #E6F2F0;
+    box-shadow: 0 1px 5px rgba(0,0,0, .3);
   }
 }
 
@@ -219,10 +227,16 @@ ruby {
 
 // 記事詳細下部お役立ち資料
 .useful {
+  box-shadow: 0 3px 6px rgba(0,0,0, .16);
+  margin-top: 60px;
+  @media #{$sp} {
+    margin-top: 30px;
+  }
   .item {
     margin-bottom: 40px;
     padding: 30px;
-    background: #F7F7F7;
+    background: #fff;
+    
     @media #{$sp} {
       padding: 15px;
       margin-bottom: 20px;
@@ -266,30 +280,26 @@ ruby {
     .more.small {
       width: 350px;
       box-shadow: none;
-      border: 1px solid #0D5BAB;
-      &::before {
-        border-top: 2px solid #0D5BAB;
-        border-right: 2px solid #0D5BAB;
-      }
       @media #{$sp} {
         width: 85%;
         margin: 0 auto;
       }
-      &:hover {
-        &::before {
-          border-top: 2px solid #fff;
-          border-right: 2px solid #fff;
-        }
-      }
+      // &:hover {
+      //   &::before {
+      //     border-top: 2px solid #fff;
+      //     border-right: 2px solid #fff;
+      //   }
+      // }
     }
   }
 }
 
 // 記事詳細下部関連コラム
 .relation {
+  box-shadow: 0 3px 6px rgba(0,0,0, .16);
   .item {
     padding: 30px;
-    background: #F7F7F7;
+    background: #fff;
     @media #{$sp} {
       padding: 15px;
     }
@@ -332,17 +342,20 @@ ruby {
 
 // カテゴリで探す
 .catSearch {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   @media #{$sp} {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
   &__list {
     li {
       a {
         display: block;
         position: relative;
-        padding: 10px 0 10px 40px;
+        padding: 15px 0 15px 40px;
         border-bottom: 1px solid #DDDDDD;
+        @media #{$sp} {
+          padding: 10px 0 10px 20px;
+        }
         &::before {
           content: " ";
           position: absolute;
@@ -356,10 +369,13 @@ ruby {
           border-color: #111 #111 transparent transparent;
           transform: rotate(45deg);
           transition: all .3s;
+          @media #{$sp} {
+            left: 10px;
+          }
         }
         &:hover {
           opacity: 1;
-          background: #0D5BAB;
+          background: #13987F;
           color: #fff;
           &::before {
             left: 20px;

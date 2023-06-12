@@ -1,0 +1,107 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="strength">
+
+  <section class="hero03 core">
+    <div class="containers">
+      <div class="hero03__box">
+        <h1 class="ttl-primary-lower">東神倉庫が選ばれる2つの理由</h1>
+        <div class="lead">利便性の高い立地と高い物流品質が<br class="sp-only">選ばれる理由です。</div>
+        <a href="/contact/" class="more">お問合せ・お見積りはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="symmetry">
+    <div class="containers">
+
+      <div class="flex aiC sp-reverse item">
+        <summary class="item__box">
+          <div class="item__box--num">01</div>
+          <h2 class="item__box--ttl">高い物流品質</h2>
+          <div class="item__box--txt">厚生労働省令で定める基準であるQMS省令に適合し、国際基準であるISO13485を2015年より取得・運用し培った経験を軸とした高品質なサービスを提供可能です。LOT・期限管理といった物流ノウハウの他、教育・訓練体制が確立された環境下、熟練スタッフによる安定した品質を保証します。</div>
+        </summary>
+        <figure class="item__img"><img src="/assets/img/strength/img01.jpg" alt="高い物流品質"></figure>
+      </div>
+
+      <div class="flex aiC item">
+        <figure class="item__img"><img src="/assets/img/strength/img02.jpg" alt="三井物産グループの豊富な物流ノウハウ"></figure>
+        <summary class="item__box">
+          <div class="item__box--num">02</div>
+          <h2 class="item__box--ttl">三井物産グループの豊富な物流ノウハウ</h2>
+          <div class="item__box--txt">自社倉庫はもちろんの事、三井物産グループのネットワークを駆使し、グループ内の様々な立地の倉庫からお客様の商流に最適な「施設」を選定、当社の親会社である三井物産グローバルロジスティクス㈱の大規模物流センターの運営ノウハウ、EC物流、IT導入、物流ロボット導入等のグループ内の豊富な物流ノウハウを駆使してお客様に「最適な物流」を企画・構築いたします。</div>
+        </summary>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="reason">
+    <div class="containers">
+      <h2 class="ttl-secondary">物流品質が高い理由</h2>
+      <ul class="flex card">
+        <li class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/strength/img01.svg" alt="作業環境"></figure>
+          <h3 class="card__box--ttl">作業環境</h3>
+          <ul class="card__box--txt">
+            <li>ディスポキャップや捕虫器といった異物混入対策</li>
+            <li>入退室カードによる情報セキュリティの徹底</li>
+            <li>会社貸与品以外の持ち込み禁止、備品1点からの徹底した倉庫内管理</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/strength/img02.svg" alt="製造品質"></figure>
+          <h3 class="card__box--ttl">製造品質</h3>
+          <ul class="card__box--txt">
+            <li>的確なPDCAサイクルによるISO13485の維持・運用</li>
+            <li>作業標準書や手順書の文書化、継続的な教育を実施した力量評価</li>
+            <li>品質マネジメントシステムの運用記録を管理</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/strength/img03.svg" alt="在庫管理"></figure>
+          <h3 class="card__box--ttl">在庫管理</h3>
+          <ul class="card__box--txt">
+            <li>固有名称や型式など、さまざまな項目での識別が可能</li>
+            <li>お客様のご要望に合わせ在庫管理システム（WMS）をカスタマイズ</li>
+            <li>「検査前」「出荷可否」「不適合品」等の識別も可</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/strength/img04.svg" alt="教育"></figure>
+          <h3 class="card__box--ttl">教育</h3>
+          <ul class="card__box--txt">
+            <li>作業マニュアル整備</li>
+            <li>チーム制採用<br class="pc-only">自己判断をしない</li>
+            <li>能力に応じた人員配置</li>
+            <li>改善箇所の洗い出し荷主様目線、倉庫目線双方で確認する取り組み</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
+
+</main>
+
+{% endblock %}

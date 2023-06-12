@@ -10,25 +10,6 @@
 <title><?php wp_title('|', true, 'right'); ?></title>
 <meta name="format-detection" content="telephone=no">
 
-<!-- Schema.org markup for Google+ -->
-<!-- <meta itemprop="name" content="<?php esc_html(bloginfo('name')) ?>">
-<meta itemprop="image" content="<?php esc_html(bloginfo('description')) ?>"> -->
-
-<!-- Twitter Card data -->
-<!-- <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="">
-<meta name="twitter:image:src" content=""> -->
-
-<!-- Open Graph data -->
-<!-- <meta property="og:title" content="<?php esc_html(bloginfo('name')) ?>">
-<meta property="og:description" content="<?php esc_html(bloginfo('description')) ?>">
-<meta property="og:type" content="website">
-<meta property="og:url" content="">
-<meta property="og:image" content="">
-<meta property="og:image:width" content="">
-<meta property="og:image:height" content="">
-<meta property="og:site_name" content="<?php esc_html(bloginfo('name')) ?>"> -->
-
 <!-- Web font -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/ncf8fus.css">
@@ -38,9 +19,13 @@
 <?php wp_head(); ?>
 
 </head>
-<body class="<?php if ($body_class) {
-								echo $body_class;
-							} ?>">
+
+<?php if (!empty($class)) : ?>
+  <body <?php body_class($class); ?>>
+<?php else : ?>
+  <body <?php body_class(); ?>>
+<?php endif; ?>
+
   <header>
   <div class="in">
     <aside class="flex aiC inherit">

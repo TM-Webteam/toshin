@@ -19,18 +19,20 @@
         </div>
       </div>
       <div class="hero04__slider">
-        <ul id="top-slide">
-          <li class="slider01"></li>
-          <li class="slider02"></li>
-          <li class="slider03"></li>
-        </ul>
+        <div class="hero04__slider--wrap">
+          <ul id="top-slide">
+            <li class="slider01"></li>
+            <li class="slider02"></li>
+            <li class="slider03"></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="intro">
     <div class="containers">
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <p>東神倉庫は昭和28年（1953年）に設立した三井物産グループの物流倉庫会社です。</p>
         <p>旧薬事法改正時（2005年）より、世界をリードする企業様との取引をはじめ、<br>豊富な取り扱い実績とノウハウをもって、高品質な物流をご提供いたします。</p>
       </div>
@@ -41,7 +43,7 @@
     <div class="containers">
       <h2 class="ttl-secondary">東神倉庫の特長</h2>
       <ul class="flex card">
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-up">
           <div class="card__box--had"><span>医療機器</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card01.jpg" alt="医療機器製造業登録倉庫"></figure>
           <dl class="card__box--txt">
@@ -49,7 +51,7 @@
             <dd>医療機器製造業を登録した薬機法対応倉庫であり、クラスⅠからクラスⅣまでの全ての医療機器の取扱いが可能、豊富な実績のある物流品質を提供します。</dd>
           </dl>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-up" data-aos-delay="200">
           <div class="card__box--had"><span>医療機器</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card02.jpg" alt="ISO13485認証取得"></figure>
           <dl class="card__box--txt">
@@ -57,7 +59,7 @@
             <dd>厚生労働省令で定める基準であるQMS省令に適合し、国際基準であるISO13485を2015年より取得・運用しております。高品質な物流サービスをご提供します。</dd>
           </dl>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-up" data-aos-delay="300">
           <div class="card__box--had"><span class="v2">医療機器／化粧品</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card03.jpg" alt="責任技術者在籍"></figure>
           <dl class="card__box--txt">
@@ -65,7 +67,7 @@
             <dd>有資格者が在籍しており、責任技術者が薬事業務の受託、支援を行うことにより新規で責任技術者を雇用する必要がありません。</dd>
           </dl>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-up" data-aos-delay="400">
           <div class="card__box--had"><span class="v3">化粧品</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card04.jpg" alt="化粧品製造業許可"></figure>
           <dl class="card__box--txt">
@@ -73,7 +75,7 @@
             <dd>化粧品製造業許可（包装・表示・保管区分）を取得し、輸入化粧品等の市場への出荷可否判定も対応可のため、お客様の物流構築の幅が広がります。化粧品の取扱いに精通したスタッフが対応いたします。</dd>
           </dl>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-up" data-aos-delay="500">
           <div class="card__box--had"><span class="v2">医療機器／化粧品</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card05.jpg" alt="提案拠点・倉庫立地"></figure>
           <dl class="card__box--txt">
@@ -81,7 +83,7 @@
             <dd>ご要望に沿った倉庫拠点を提案いたします。特に医療機器・化粧品物流の第１センターは品川区に立地、首都高IC、羽田空港に近く交通アクセス最適。危険物倉庫も隣接しております。</dd>
           </dl>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-up" data-aos-delay="600">
           <div class="card__box--had"><span class="v2">医療機器／化粧品</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card06.jpg" alt="データ連携"></figure>
           <dl class="card__box--txt">
@@ -100,7 +102,7 @@
   <section class="material">
     <div class="containers">
       <div class="flex aiC jcC gap30 desc">
-        <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt="医療機器物流・化粧品物流"></figure>
+        <figure class="desc__img" data-aos="flip-up"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt="医療機器物流・化粧品物流"></figure>
         <summary class="desc__box">
           <h3 class="desc__box--sub">特長・概要が3分でわかる！</h3>
           <h2 class="desc__box--ttl">医療機器物流・化粧品物流</h2>
@@ -114,15 +116,15 @@
     <div class="containers">
       <h2 class="ttl-secondary">以下のようなニーズ・課題を持つ企業様に活用されています。</h2>
       <ul class="flex gap30 card">
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-right">
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img01.jpg" alt="事業拡大に伴い現行倉庫が手狭になった"></figure>
           <h3 class="card__box--ttl">事業拡大に伴い<br>現行倉庫が手狭になった</h3>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-right" data-aos-delay="200">
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img02.jpg" alt="医療機器・化粧品の物流に詳しい倉庫会社を探している"></figure>
           <h3 class="card__box--ttl">医療機器・化粧品の物流に<br>詳しい倉庫会社を探している</h3>
         </li>
-        <li class="card__box">
+        <li class="card__box" data-aos="fade-right" data-aos-delay="400">
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img03.jpg" alt="法定表示ラベル・添付文書封入等の作業が出来る倉庫を探している"></figure>
           <h3 class="card__box--ttl">法定表示ラベル・添付文書封入等の<br>作業が出来る倉庫を探している</h3>
         </li>
@@ -134,7 +136,7 @@
   <section class="useful-wp">
     <div class="containers">
       <h2 class="ttl-secondary">お役立ち資料</h2>
-      <div class="flex gap30">
+      <div class="flex gap30" data-aos="fade-up">
         <a href="#" class="card">
           <figure class="card__img"><img src="<?php echo assets_path() ?>img/common/img01.png" alt=""></figure>
           <summary class="card__box">
@@ -159,7 +161,7 @@
   <section class="info">
     <div class="containers">
       <h2 class="ttl-secondary">会社情報</h2>
-      <div class="flex gap30 card">
+      <div class="flex gap30 card" data-aos="fade-up">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>company/" class="card__box">
           <h3 class="card__box--txt">会社概要</h3>
         </a>
@@ -209,23 +211,7 @@
     </div>
   </section>
 
-  <section class="inquiry">
-    <div class="containers">
-      <h2 class="ttl-secondary cW non">医療機器・化粧品物流に関する<br class="sp-only">お問合せ・お見積り</h2>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="more">お問合せ・簡易お見積り</a>
-      <div class="flex jcC gap20 aiC inquiry__tel">
-        <a href="tel:0337666054" class="tel">03-3766-6054</a>
-        <span>（平日：09:00～17:00）</span>
-      </div>
-      <summary class="flex aiC inquiry__box">
-        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
-        <div class="flex inquiry__box--btn">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more tiny bgG"><span>サービス資料</span></a>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>whitepaper/" class="more tiny bgG"><span>お役立ち資料</span></a>
-        </div>
-      </summary>
-    </div>
-  </section>
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
 
 </main>
 

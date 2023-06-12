@@ -22,16 +22,15 @@
       }
       a {
         display: block;
-        color: #fff;
-        background: #0D5BAB;
+        color: #13987F;
+        background: #fff;
         text-align: center;
         padding: 17px;
-        box-shadow: 0 7px 20px rgba(0,0,0,0.22);
-        border: 3px solid #0D5BAB;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.11);
+        border: 1px solid #13987F;
         position: relative;
         @media #{$sp} {
           padding: 10px;
-          border: 2px solid #0D5BAB;
         }
         &::before {
           content: "";
@@ -43,14 +42,14 @@
           width: 5px;
           height: 5px;
           border: 2px solid;
-          border-color:  transparent transparent #0D5BAB #0D5BAB;
+          border-color:  transparent transparent #13987F #13987F;
           transform: rotate(-45deg);
           transition: all .3s;
         }
         &:hover {
           opacity: 1;
-          color: #0D5BAB;
-          background: #fff;
+          color: #fff;
+          background: #13987F;
           &::before {
             bottom: -20px;
           }
@@ -149,6 +148,7 @@
         font-size: 76px;
         line-height: 1;
         margin-bottom: 15px;
+        color: #13987F;
         @media #{$sp} {
           font-size: 30px;
           margin-bottom: 10px;
@@ -159,10 +159,11 @@
         font-size: 22px;
         font-weight: bold;
         line-height: 1.5;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         @media #{$sp} {
           font-size: 16px;
           margin-bottom: 15px;
+          text-align: center;
         }
       }
       &--txt {
@@ -198,52 +199,106 @@
 
 // 何かの要素
 .element {
-  .item {
-    margin-bottom: 70px;
+  .ttl-secondary {
+    margin-bottom: 90px;
     @media #{$sp} {
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
+  }
+  .item {
+    
     &__box {
       text-align: center;
-      width: calc(100% / 3 - 20px);
+      width: calc(100% / 5 - 20px);
+      background: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+      padding-top: 25px;
+      position: relative;
       @media #{$sp} {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
       }
       &--num {
-        background: #0D5BAB;
+        background: #13987F;
         color: #fff;
-        font-size: 32px;
+        font-size: 18px;
         font-weight: bold;
-        width: 58px;
-        height: 58px;
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
-        margin: 0 auto 20px;
         font-family: din-2014, sans-serif;
-        font-weight: 700;
         font-style: normal;
+        line-height: 1;
+        position: absolute;
+        top: -23px;
+        left: 20px;
         @media #{$sp} {
-          font-size: 20px;
+          font-size: 14px;
           width: 40px;
           height: 40px;
-          margin: 0 auto 15px;
+          top: -20px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        small {
+          font-size: 12px;
+        }
+        &.v2 {
+          background: #118C76;
+        }
+        &.v3 {
+          background: #0F806B;
+        }
+        &.v4 {
+          background: #0E7360;
+        }
+        &.v5 {
+          background: #0C6656;
         }
       }
       &--ttl {
-        font-size: 20px;
         font-weight: bold;
         line-height: 1.5;
-        margin-bottom: 30px;
+        height: 50px;
+        margin-bottom: 10px;
         @media #{$sp} {
-          font-size: 16px;
-          margin-bottom: 15px;
+          height: auto;
         }
       }
       &--img {
 
       }
+      &--txt {
+        padding: 15px;
+        font-size: 14px;
+        line-height: 2;
+        text-align: left;
+      }
       &:not(:last-child) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: -15px;
+          margin: auto;
+          width: 10px;
+          height: 10px;
+          border: 2px solid;
+          border-color: #13987F #13987F transparent transparent;
+          transform: rotate(45deg);
+          @media #{$sp} {
+            top: auto;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: rotate(135deg);
+          }
+        }
         @media #{$sp} {
-          margin-bottom: 15px;
+          margin-bottom: 60px;
         }
       }
     }
@@ -402,8 +457,10 @@
   }
   .more {
     width: 560px;
+    font-size: 20px;
     @media #{$sp} {
       width: 85%;
+      font-size: 16px;
     }
   }
   &__tel {
@@ -666,7 +723,7 @@
   color: #fff;
   height: 310px;
   @media #{$sp} {
-    height: 345px;
+    height: auto;
     background-attachment: scroll;
   }
   .containers {
@@ -693,7 +750,7 @@
       }
     }
     &__box {
-      width: 40%;
+      width: 45%;
       @media #{$sp} {
         width: 100%;
         text-align: center;
@@ -914,13 +971,14 @@
 
 // カード型 type4
 .card-type4 {
-  background: #f7f7f7; //仮
+  background: #F2F4F4;
   .card {
     position: relative;
+    border-top: 3px solid #13987F;
     &:not(:last-child) {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
       @media #{$sp} {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
       }
     }
     &__ttl {
@@ -946,11 +1004,11 @@
       }
     }
     &__box {
-      padding: 50px 30px 30px;
+      padding: 30px;
       background: #fff;
-      box-shadow: 0 3px 6px rgba(0,30,78,0.16);
+      // box-shadow: 0 3px 6px rgba(0,30,78,0.16);
       @media #{$sp} {
-        padding: 50px 15px 15px;
+        padding: 15px;
       }
       &--txt {
         width: calc(100% / 2 - 20px);
@@ -961,10 +1019,11 @@
           font-size: 22px;
           font-weight: bold;
           line-height: 1.5;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
           @media #{$sp} {
             font-size: 16px;
             margin-bottom: 15px;
+            text-align: center;
           }
         }
       }
@@ -1257,6 +1316,91 @@
             font-size: 36px;
           }
         }
+      }
+    }
+  }
+}
+
+// サービス資料
+.catalog-menu {
+
+  .card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.11);
+    background: #fff;
+    padding: 30px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    &__img {
+      width: 30%;
+      text-align: center;
+      overflow: hidden;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        transition: all .3s;
+      }
+    }
+    &__box {
+      width: calc(100% - 30% - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        transition: all .3s;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &--txt {
+        margin-bottom: 30px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        transition: all .3s;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        max-width: 360px;
+        margin: 0;
+        font-size: 16px;
+        transition: all .3s;
+        @media #{$sp} {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      .card__box--ttl {
+        color: #13987F;
+      }
+      .more {
+        background-position: 99% 50%;
       }
     }
   }
