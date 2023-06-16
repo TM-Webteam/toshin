@@ -1,0 +1,133 @@
+/*
+  ----------------
+  cosmetic
+  ----------------
+*/
+
+.cosmetic {
+
+  .hero03 {
+    background: url("../img/cosmetic/bg-hero.webp") 50% / cover no-repeat;
+    height: 430px;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      width: 55%;
+      text-align: center;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+    &__sub {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      @media #{$sp} {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+    .ttl-primary-lower {
+      margin-bottom: 60px;
+      color: #212529;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .about {
+    &__box {
+      width: calc(100% / 2 - 10px);
+      font-size: 20px;
+      @media #{$sp} {
+        width: 100%;
+        font-size: 14px;
+      }
+      &--img {
+        width: 210px;
+        margin: 40px auto 0;
+        @media #{$sp} {
+          margin: 20px auto 0;
+        }
+      }
+    }
+    &__img {
+      width: calc(100% / 2 - 20px);
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  
+  .features {
+    .card {
+      &__box {
+        width: calc(100% / 3 - 20px);
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        position: relative;
+        text-align: center;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          width: 100%;
+        }
+        &--had {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -15px;
+          margin: auto;
+          z-index: 4;
+          @media #{$sp} {
+            top: -12px;
+          }
+          span {
+            text-align: center;
+            color: #fff;
+            padding: 3px 15px;
+            display: inline-block;
+            background: #67A0EA;
+            font-weight: 500;
+            &.v2 {
+              background: #5FBECC;
+            }
+            &.v3 {
+              background: #8ECB60;
+            }
+          }
+        }
+        &--img {
+
+        }
+        &--txt {
+          padding: 30px;
+          @media #{$sp} {
+            padding: 15px;
+          }
+          dt {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            @media #{$sp} {
+              font-size: 16px;
+            }
+          }
+          dd {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .reason {
+    background: #fff;
+    .card__box {
+      background: #F8F8F8;
+    }
+  }
+
+}
