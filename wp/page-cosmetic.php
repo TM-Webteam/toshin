@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<main class="medical">
+<main class="cosmetic">
 
   <section class="hero03 core">
     <div class="containers">
       <div class="hero03__box">
-        <div class="hero03__sub">専門性の求められる医療機器の取扱いに<br class="sp-only">特化した物流サービス</div>
-        <h1 class="ttl-primary-lower">医療機器物流サービス</h1>
+        <div class="hero03__sub">化粧品製造業許可を持つ東神倉庫が<br class="sp-only">提供する物流サービス</div>
+        <h1 class="ttl-primary-lower">化粧品物流サービス</h1>
         <div class="ctabtn">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more core">
             <div class="balloon"><span class="balloon__txt">特長・概要が3分でわかる！</span></div>
@@ -30,34 +30,34 @@
 
   <section id="service" class="about deco-r">
     <div class="containers">
-      <h2 class="ttl-secondary">医療機器物流サービスとは</h2>
+      <h2 class="ttl-secondary">化粧品物流サービスとは</h2>
       <div class="flex sp-reverse">
         <dl class="about__box">
-          <dd>東神倉庫の医療機器物流は、旧薬事法改正時に医療機器製造業を取得し、お客様の医療機器物流のアウトソースを受託しております。<br>長年培った運用実績と知見を活かし、お客様が抱える課題や物流波動へも柔軟に対応し、安定した品質を提供。<br>豊富な経験と徹底した従業員への教育を基に、作業手順書に則った高品質な物流体制を構築します。</dd>
+          <dd>東神倉庫の化粧品物流は、化粧品製造業許可を取得し、医療機器物流にて培った知見を活かした高品質な物流体制を構築しております。<br>立地の特性から作業員の確保及び定着率も高く、ラベル貼りやギフト用ラッピング、アッセンブリ等の繊細な作業も安定した生産性をお約束します。<br>お客様のブランドイメージを大切に、私たちは寄り添い、高品質な物流体制を構築します。</dd>
         </dl>
-        <figure class="about__img" data-aos="fade-left"><img src="<?php echo assets_path() ?>img/medical/img-about.jpg" alt=""></figure>
+        <figure class="about__img" data-aos="fade-left"><img src="<?php echo assets_path() ?>img/cosmetic/img-about.jpg" alt="化粧品物流サービスとは"></figure>
       </div>
     </div>
   </section>
 
   <section id="features" class="features deco-l">
     <div class="containers">
-      <h2 class="ttl-secondary">医療機器物流サービスの特長</h2>
-      <ul class="flex jcC gap30 card">
+      <h2 class="ttl-secondary">化粧品物流サービスの特長</h2>
+      <ul class="flex card">
         <li class="card__box" data-aos="fade-up">
-          <div class="card__box--had"><span>医療機器</span></div>
-          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card01.jpg" alt="医療機器製造業登録倉庫"></figure>
+          <div class="card__box--had"><span class="v3">化粧品</span></div>
+          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card04.jpg" alt="化粧品製造業許可"></figure>
           <dl class="card__box--txt">
-            <dt><h3>医療機器製造業登録倉庫</h3></dt>
-            <dd>医療機器製造業を登録した薬機法対応倉庫であり、クラスⅠからクラスⅣまでの全ての医療機器の取扱いが可能、豊富な実績のある物流品質を提供します。</dd>
+            <dt><h3>化粧品製造業許可</h3></dt>
+            <dd>化粧品製造業許可（包装・表示・保管区分）を取得し、輸入化粧品等の市場への出荷可否判定も対応可のため、お客様の物流構築の幅が広がります。化粧品の取扱いに精通したスタッフが対応いたします。</dd>
           </dl>
         </li>
         <li class="card__box" data-aos="fade-up" data-aos-delay="200">
-          <div class="card__box--had"><span>医療機器</span></div>
-          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card02.jpg" alt="ISO13485認証取得"></figure>
+          <div class="card__box--had"><span class="v2">医療機器／化粧品</span></div>
+          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card05.jpg" alt="提案拠点・倉庫立地"></figure>
           <dl class="card__box--txt">
-            <dt><h3>ISO13485認証取得</h3></dt>
-            <dd>厚生労働省令で定める基準であるQMS省令に適合し、国際基準であるISO13485を2015年より取得・運用しております。高品質な物流サービスをご提供します。</dd>
+            <dt><h3>提案拠点・倉庫立地</h3></dt>
+            <dd>ご要望に沿った倉庫拠点を提案いたします。特に医療機器・化粧品物流の第１センターは品川区に立地、首都高IC、羽田空港に近く交通アクセス最適。危険物倉庫も隣接しております。</dd>
           </dl>
         </li>
         <li class="card__box" data-aos="fade-up" data-aos-delay="300">
@@ -69,14 +69,6 @@
           </dl>
         </li>
         <li class="card__box" data-aos="fade-up" data-aos-delay="400">
-          <div class="card__box--had"><span class="v2">医療機器／化粧品</span></div>
-          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card05.jpg" alt="提案拠点・倉庫立地"></figure>
-          <dl class="card__box--txt">
-            <dt><h3>提案拠点・倉庫立地</h3></dt>
-            <dd>ご要望に沿った倉庫拠点を提案いたします。特に医療機器・化粧品物流の第１センターは品川区に立地、首都高IC、羽田空港に近く交通アクセス最適。危険物倉庫も隣接しております。</dd>
-          </dl>
-        </li>
-        <li class="card__box" data-aos="fade-up" data-aos-delay="500">
           <div class="card__box--had"><span class="v2">医療機器／化粧品</span></div>
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-card06.jpg" alt="データ連携"></figure>
           <dl class="card__box--txt">
@@ -92,15 +84,12 @@
     <div class="containers">
       <h2 class="ttl-secondary">取扱い商材例</h2>
       <ul class="flex gap30 item">
-        <li data-aos="flip-up">歯科用機器</li>
-        <li data-aos="flip-up" data-aos-delay="200">手術台</li>
-        <li data-aos="flip-up" data-aos-delay="300">無影灯</li>
-        <li data-aos="flip-up" data-aos-delay="400">人工呼吸器</li>
-        <li data-aos="flip-up" data-aos-delay="500">カテーテル</li>
-        <li data-aos="flip-up" data-aos-delay="600">カラーコンタクトレンズ</li>
-        <li data-aos="flip-up" data-aos-delay="700">人工血管</li>
-        <li data-aos="flip-up" data-aos-delay="800">人工心肺</li>
-        <li data-aos="flip-up" data-aos-delay="900">整形インプラント</li>
+        <li data-aos="flip-up">ピーリング石鹸</li>
+        <li data-aos="flip-up" data-aos-delay="200">ネイル用品</li>
+        <li data-aos="flip-up" data-aos-delay="300">ヘアケア用品</li>
+        <li data-aos="flip-up" data-aos-delay="400">スキンケア化粧品</li>
+        <li data-aos="flip-up" data-aos-delay="500">ボディーケア化粧品</li>
+        <li data-aos="flip-up" data-aos-delay="600">フレグランス化粧品</li>
       </ul>
     </div>
   </section>
@@ -124,7 +113,7 @@
     <div class="containers">
       <h2 class="ttl-secondary">東神倉庫の拠点</h2>
       <div class="flex item">
-        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base01.jpg" alt="勝島本社ビル・倉庫施設（危険物倉庫併設）"></figure>
+        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base01.jpg" alt=""></figure>
         <summary class="item__box">
           <h3 class="item__box--ttl">勝島本社ビル・倉庫施設（危険物倉庫併設）</h3>
           <dl class="flex fS item__box--txt">
@@ -139,7 +128,7 @@
       </div>
 
       <div class="flex item">
-        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base02.jpg" alt="葛西物流センター"></figure>
+        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base02.jpg" alt=""></figure>
         <summary class="item__box">
           <h3 class="item__box--ttl">葛西物流センター</h3>
           <dl class="flex fS item__box--txt">
@@ -149,6 +138,36 @@
           <dl class="flex fS item__box--txt">
             <dt>最寄り駅</dt>
             <dd>JR京葉線「葛西臨海公園駅」徒歩15分<br>東京メトロ東西線「西葛西駅」よりバス10分徒歩3分</dd>
+          </dl>
+        </summary>
+      </div>
+
+      <div class="flex item">
+        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base03.jpg" alt=""></figure>
+        <summary class="item__box">
+          <h3 class="item__box--ttl">大宮支店</h3>
+          <dl class="flex fS item__box--txt">
+            <dt>住所</dt>
+            <dd>埼玉県さいたま市</dd>
+          </dl>
+          <dl class="flex fS item__box--txt">
+            <dt>最寄り駅</dt>
+            <dd>JR宇都宮線「東大宮駅」徒歩15分<br>JR宇都宮線「土呂駅」徒歩15分<br>JR大宮駅より自動車15分</dd>
+          </dl>
+        </summary>
+      </div>
+
+      <div class="flex item">
+        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base04.jpg" alt=""></figure>
+        <summary class="item__box">
+          <h3 class="item__box--ttl">船橋アーカイブセンター</h3>
+          <dl class="flex fS item__box--txt">
+            <dt>住所</dt>
+            <dd>千葉県船橋市</dd>
+          </dl>
+          <dl class="flex fS item__box--txt">
+            <dt>最寄り駅</dt>
+            <dd>JR京葉線「二俣新町駅」<br>京成バス「二俣新道」乗車「中央埠頭」下車徒歩1分</dd>
           </dl>
         </summary>
       </div>
@@ -174,9 +193,9 @@
         </li>
         <li class="item__box" data-aos="fade-right" data-aos-delay="300">
           <div class="item__box--num core v3"><small>STEP</small>3</div>
-          <div class="item__box--ttl core">ISO13485に<br class="pc-only">則った作業</div>
+          <div class="item__box--ttl core">包装・表示</div>
           <figure class="item__box--img"><img src="<?php echo assets_path() ?>img/common/img-element03.jpg" alt="ISO13485に則った作業"></figure>
-          <div class="item__box--txt">出荷判定書の作成、添付文書の封入作業など、QMS省令に則った作業手順書を用いて品質検品、出荷判定を行います。</div>
+          <div class="item__box--txt">製品標準書及び作業手順書に沿った目視検品や触手検品、ラベル貼付作業をお客様ニーズに合わせて実施。イベントや季節に合わせた緩衝材やラッピング資材を用いて、お客様のブランディングをお手伝いします。</div>
         </li>
         <li class="item__box" data-aos="fade-right" data-aos-delay="400">
           <div class="item__box--num core v4"><small>STEP</small>4</div>

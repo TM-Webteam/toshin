@@ -64,15 +64,18 @@
   
   .features {
     .card {
+      max-width: 750px;
+      margin: 0 auto;
       &__box {
-        width: calc(100% / 3 - 20px);
+        width: calc(100% / 2 - 25px);
         background: #fff;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16);
         position: relative;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         @media #{$sp} {
           width: 100%;
+          margin-bottom: 30px;
         }
         &--had {
           position: absolute;
@@ -118,6 +121,31 @@
           dd {
             text-align: left;
           }
+        }
+      }
+    }
+  }
+
+  .commodity {
+    .item {
+      li {
+        &:nth-child(1) {
+          background-image: url("../img/cosmetic/img-commodity01.svg");
+        }
+        &:nth-child(2) {
+          background-image: url("../img/cosmetic/img-commodity02.svg");
+        }
+        &:nth-child(3) {
+          background-image: url("../img/cosmetic/img-commodity03.svg");
+        }
+        &:nth-child(4) {
+          background-image: url("../img/cosmetic/img-commodity04.svg");
+        }
+        &:nth-child(5) {
+          background-image: url("../img/cosmetic/img-commodity05.svg");
+        }
+        &:nth-child(6) {
+          background-image: url("../img/cosmetic/img-commodity06.svg");
         }
       }
     }
