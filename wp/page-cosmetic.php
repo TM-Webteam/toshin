@@ -142,36 +142,6 @@
         </summary>
       </div>
 
-      <div class="flex item">
-        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base03.jpg" alt=""></figure>
-        <summary class="item__box">
-          <h3 class="item__box--ttl">大宮支店</h3>
-          <dl class="flex fS item__box--txt">
-            <dt>住所</dt>
-            <dd>埼玉県さいたま市</dd>
-          </dl>
-          <dl class="flex fS item__box--txt">
-            <dt>最寄り駅</dt>
-            <dd>JR宇都宮線「東大宮駅」徒歩15分<br>JR宇都宮線「土呂駅」徒歩15分<br>JR大宮駅より自動車15分</dd>
-          </dl>
-        </summary>
-      </div>
-
-      <div class="flex item">
-        <figure class="item__img" data-aos="fade-up"><img src="<?php echo assets_path() ?>img/common/img-base04.jpg" alt=""></figure>
-        <summary class="item__box">
-          <h3 class="item__box--ttl">船橋アーカイブセンター</h3>
-          <dl class="flex fS item__box--txt">
-            <dt>住所</dt>
-            <dd>千葉県船橋市</dd>
-          </dl>
-          <dl class="flex fS item__box--txt">
-            <dt>最寄り駅</dt>
-            <dd>JR京葉線「二俣新町駅」<br>京成バス「二俣新道」乗車「中央埠頭」下車徒歩1分</dd>
-          </dl>
-        </summary>
-      </div>
-
     </div>
   </section>
 
@@ -194,7 +164,7 @@
         <li class="item__box" data-aos="fade-right" data-aos-delay="300">
           <div class="item__box--num core v3"><small>STEP</small>3</div>
           <div class="item__box--ttl core">包装・表示</div>
-          <figure class="item__box--img"><img src="<?php echo assets_path() ?>img/common/img-element03.jpg" alt="ISO13485に則った作業"></figure>
+          <figure class="item__box--img"><img src="<?php echo assets_path() ?>img/common/img-element06.jpg" alt="ISO13485に則った作業"></figure>
           <div class="item__box--txt">製品標準書及び作業手順書に沿った目視検品や触手検品、ラベル貼付作業をお客様ニーズに合わせて実施。イベントや季節に合わせた緩衝材やラッピング資材を用いて、お客様のブランディングをお手伝いします。</div>
         </li>
         <li class="item__box" data-aos="fade-right" data-aos-delay="400">

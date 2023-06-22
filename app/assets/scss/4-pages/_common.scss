@@ -26,7 +26,7 @@
     &__box {
       // display: block;
       width: calc(100% / 4 - 20px);
-      padding: 30px;
+      padding: 30px 15px;
       background: #fff;
       box-shadow: 0 3px 6px rgba(0,0,0,0.16);
       @media #{$sp} {
